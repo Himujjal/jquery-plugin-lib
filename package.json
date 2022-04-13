@@ -1,0 +1,40 @@
+{
+  "name": "jquery-plugin-lib",
+  "description": "A private NPM module that is a JQuery plugin - Spiralyze",
+  "version": "0.0.1",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "parcel watch src/index.js",
+    "build": "parcel build src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Himujjal/jquery-plugin-lib"
+  },
+  "keywords": [
+    "jquery",
+    "spiralyze"
+  ],
+  "author": "Yuriy <yuriy@spiralyze.com>",
+  "url": "https://github.com/Himujjal/jquery-plugin-lib",
+  "bugs": "https://github.com/Himujjal/jquery-plugin-lib/issues",
+  "devDependencies": {
+    "@parcel/transformer-inline-string": "2.4.1",
+    "parcel": "^2.4.1"
+  },
+  "ignore": "------------ parcel ---------------------",
+  "global": "dist/index.js",
+  "targets": {
+    "global": {
+      "context": "browser",
+      "outputFormat": "global"
+    },
+    "main": false
+  },
+  "alias": {
+    "jquery": {
+      "global": "$"
+    }
+  }
+}
