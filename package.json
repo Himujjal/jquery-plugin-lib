@@ -23,6 +23,9 @@
     "@parcel/transformer-inline-string": "2.4.1",
     "parcel": "^2.4.1"
   },
+  "peerDependencies": {
+    "jquery": "^2.6.0"
+  },
   "ignore": "------------ parcel ---------------------",
   "global": "dist/index.js",
   "targets": {
